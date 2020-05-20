@@ -1,5 +1,19 @@
 module.exports = {
   // add your custom config here
   // https://stylelint.io/user-guide/configuration
-  rules: {}
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "screen"
+        ]
+      }
+    ]
+  }
+
 }
