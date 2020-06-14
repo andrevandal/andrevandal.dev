@@ -22,13 +22,13 @@
     }
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^0.4.0",
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxt/typescript-runtime": "0.4.10",
+    "@nuxtjs/axios": "5.11.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "1.0.0",
+    "@nuxt/typescript-build": "1.0.3",
     "@nuxtjs/eslint-config-typescript": "2.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/stylelint-module": "4.0.0",
@@ -36,18 +36,18 @@
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "26.0.1",
-    "eslint": "7.0.0",
+    "eslint": "7.2.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.0.0",
     "jest": "26.0.1",
-    "lint-staged": "^10.0.0",
+    "lint-staged": "10.2.10",
     "prettier": "2.0.5",
-    "stylelint": "13.5.0",
+    "stylelint": "13.6.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-selector-bem-pattern": "^2.1.0",
-    "ts-jest": "26.0.0",
+    "ts-jest": "26.1.0",
     "vue-jest": "^4.0.0-0"
   }
 }
