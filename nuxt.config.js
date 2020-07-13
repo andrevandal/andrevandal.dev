@@ -72,6 +72,12 @@ export default {
    ** Global CSS
    */
   css: [],
+  components: [
+    '~/components/',
+    { path: '~/components/Atoms/', prefix: 'Atoms' },
+    { path: '~/components/Molecules/', prefix: 'Molecules' },
+    { path: '~/components/Organisms/', prefix: 'Organisms' },
+  ],
   /*
    ** Plugins to load before mounting the App
    */
