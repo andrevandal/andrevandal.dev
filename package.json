@@ -10,10 +10,12 @@
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:css": "stylelint '**/*.{vue,htm,html,css,sss,less,scss,sass,postcss}' --ignore-path .gitignore",
     "test": "jest"
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint:js",
+    "*.{css,vue}": "yarn lint:css"
   },
   "husky": {
     "hooks": {
