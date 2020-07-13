@@ -110,6 +110,11 @@ export default {
    ** Build configuration
    */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-nested': {},
+      },
+    },
     babel: {
       presets({ isServer }) {
         return [
