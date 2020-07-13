@@ -14,7 +14,37 @@ export default {
         content: process.env.npm_package_description || '',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        hid: 'AlmaMono-Regular',
+        rel: 'preload',
+        href: '/fonts/AlmaMono-Regular.woff2',
+        as: 'font',
+        crossorigin: 'anonymous',
+      },
+      // {
+      //   hid: 'AlmaMono-Heavy',
+      //   rel: 'preload',
+      //   href: '/fonts/AlmaMono-Heavy.woff2',
+      //   as: 'font',
+      //   crossorigin: 'anonymous',
+      // },
+      // {
+      //   hid: 'AlmaMono-Thin',
+      //   rel: 'preload',
+      //   href: '/fonts/AlmaMono-Thin.woff2',
+      //   as: 'font',
+      //   crossorigin: 'anonymous',
+      // },
+      // {
+      //   hid: 'AlmaMono-Light',
+      //   rel: 'preload',
+      //   href: '/fonts/AlmaMono-Light.woff2',
+      //   as: 'font',
+      //   crossorigin: 'anonymous',
+      // },
+    ],
   },
   /*
    ** Customize the progress-bar color
