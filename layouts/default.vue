@@ -1,5 +1,8 @@
 <template>
   <div>
-    <nuxt />
+    <OrganismsHeader />
+    <main>
+      <nuxt />
+    </main>
   </div>
 </template>
