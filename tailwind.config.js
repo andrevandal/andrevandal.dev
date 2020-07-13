@@ -162,5 +162,13 @@ module.exports = {
       textUnset: true, // whether to generate utilities to unset text properties
       componentPrefix: '', // the prefix to use for text style classes
     }),
+    function ({ addBase }) {
+      addBase({
+        html: {
+          '-webkit-tap-highlight-color': 'rgba(0, 0, 0, 0)',
+          scrollBehavior: 'smooth',
+        },
+      })
+    },
   ],
 }
