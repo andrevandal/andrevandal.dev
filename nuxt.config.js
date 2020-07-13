@@ -4,14 +4,32 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    htmlAttrs: {
+      lang: 'pt-br',
+      class: 'font-sans',
+    },
+    titleTemplate: '%s | andrevandal.dev',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Desenvolvimento Perfomático',
+        template: (chunk) => `${chunk} | andrevandal.dev`,
+      },
+      {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content:
+          'Desenvolvimento web moderno com especialista em Performance, SEO, SMO, Analyitcs e Marketing. Conheça André Van Dal.',
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        property: 'og:description',
+        content:
+          'Desenvolvimento web moderno com especialista em Performance, SEO, SMO, Analyitcs e Marketing. Conheça André Van Dal.',
       },
     ],
     link: [
