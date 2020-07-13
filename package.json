@@ -31,16 +31,37 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "browserslist": {
+    "production": [
+      ">0.25%",
+      "not ie 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "modern": [
+      "last 1 chrome version",
+      "last 1 firefox version"
+    ],
+    "ssr": [
+      "node 12"
+    ]
+  },
   "dependencies": {
     "@nuxt/typescript-runtime": "1.0.0",
     "@nuxtjs/axios": "5.12.0",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "2.13.3",
+    "nuxt": "^2.13.3",
     "tailwindcss-typography": "^3.1.0"
   },
   "devDependencies": {
+    "@babel/runtime-corejs3": "^7.10.4",
     "@commitlint/cli": "^9.0.1",
     "@commitlint/config-conventional": "^9.0.1",
+    "@nuxt/babel-preset-app": "^2.13.3",
     "@nuxt/types": "^2.13.3",
     "@nuxt/typescript-build": "2.0.0",
     "@nuxtjs/eslint-config-typescript": "2.0.0",
@@ -52,6 +73,7 @@
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.0.1",
     "babel-jest": "26.1.0",
+    "core-js": "3",
     "eslint": "7.4.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
