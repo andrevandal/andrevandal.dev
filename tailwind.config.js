@@ -70,8 +70,8 @@ module.exports = {
         mono: ['"JetBrains Mono"', ...fontFamily.mono],
       },
       textIndent: {
-        '1': '0.25rem',
-        '2': '0.5rem',
+        1: '0.25rem',
+        2: '0.5rem',
       },
       textStyles: (theme) => ({
         heading: {

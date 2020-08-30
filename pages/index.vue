@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">
-        andrevandal.dev
-      </h1>
+      <h1 class="title">andrevandal.dev</h1>
       <h2 class="subtitle">
         The personal website, blog, portifolio and online CV of André Van Dal, a
         web developer.
