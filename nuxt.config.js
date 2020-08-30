@@ -91,6 +91,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    // Docs: https://github.com/nuxt-community/svg-module
+    '@nuxtjs/svg',
   ],
   /*
    ** Nuxt.js modules
@@ -98,8 +100,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // Doc: https://pwa.nuxtjs.org/
     '@nuxtjs/pwa',
-    '@nuxtjs/svg',
   ],
   /*
    ** Axios module configuration
