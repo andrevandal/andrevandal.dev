@@ -1,5 +1,6 @@
 export default {
   mode: 'universal',
+  srcDir: 'src/',
   /*
    ** Headers of the page
    */
@@ -94,6 +95,9 @@ export default {
     // Docs: https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
   ],
+  tailwindcss: {
+    configPath: '@/../tailwind.config.js',
+  },
   /*
    ** Nuxt.js modules
    */
