@@ -130,6 +130,7 @@ module.exports = {
       textUnset: true, // whether to generate utilities to unset text properties
       componentPrefix: '', // the prefix to use for text style classes
     }),
+    require('@tailwindcss/typography'),
     function ({ addBase }) {
       addBase({
         html: {
