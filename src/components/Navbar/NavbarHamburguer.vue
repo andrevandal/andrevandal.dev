@@ -1,12 +1,12 @@
 <template>
   <button
     :aria-controls="controls"
-    :aria-expanded="`${actived}`"
-    :class="{ actived }"
+    :aria-expanded="`${value}`"
+    :class="{ actived: value }"
     type="button"
     aria-label="Toggle navigation"
     class="hamburger"
-    @click="toggle"
+    @click="change"
   >
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
@@ -16,7 +16,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import vModel from '@/mixins/vModel.vue'
+
 export default Vue.extend({
+  mixins: [vModel],
   props: {
     label: {
       type: String,
@@ -25,15 +28,6 @@ export default Vue.extend({
     controls: {
       type: String,
       default: 'navbar_collapse',
-    },
-  },
-  data: () => ({
-    actived: false,
-  }),
-  methods: {
-    toggle() {
-      this.actived = !this.actived
-      this.$emit('toggle', this.actived)
     },
   },
 })
