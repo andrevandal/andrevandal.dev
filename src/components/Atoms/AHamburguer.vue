@@ -37,9 +37,11 @@ export default Vue.extend({
 .hamburger {
   @apply inline-block bg-transparent border-0 outline-none overflow-visible w-10 h-10;
 
-  &:focus {
+  /* &:hover {} */
+
+  /* &:focus {
     @apply outline-none;
-  }
+  } */
 
   &-box {
     @apply relative inline-block w-10;
@@ -51,11 +53,12 @@ export default Vue.extend({
     @apply block top-auto bottom-0 delay-150 duration-150;
 
     margin-top: -0.4em;
-    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: background-color 0.1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.1s;
+
     &,
     &::after,
     &::before {
-      @apply absolute transition-transform ease-in-out duration-150 bg-oceangreen-600 rounded-lg;
+      @apply absolute bg-oceangreen-600 rounded-lg;
 
       width: 2.5em;
       height: 0.4em;
@@ -69,33 +72,26 @@ export default Vue.extend({
 
     &::before {
       top: -0.625em;
-      transition: top 0.12s cubic-bezier(0.33333, 0.66667, 0.66667, 1) 0.2s,
-        transform 0.15s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+      transition: top 0.1s cubic-bezier(0.33333, 0, 0.66667, 0.33333) 0.1s,
+        transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0.15s;
     }
 
     &::after {
       bottom: -0.625em;
-      top: -1.25em;
-      transition: top 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1) 0.2s,
-        opacity 0.1s linear;
+      transition: bottom 0.1s cubic-bezier(0.33333, 0, 0.66667, 0.33333) 0.1s,
+        transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0.15s;
     }
   }
   &.actived {
     .hamburger-inner {
-      transition-delay: 0.22s;
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transform: translate3d(0, -0.625em, 0) rotate(-45deg);
+      background-color: transparent;
       &::before {
         top: 0;
-        transition: top 0.1s cubic-bezier(0.33333, 0, 0.66667, 0.33333) 0.16s,
-          transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1) 0.25s;
-        transform: rotate(-90deg);
+        transform: rotate(-45deg);
       }
       &::after {
-        top: 0;
-        transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-          opacity 0.1s linear 0.22s;
-        opacity: 0;
+        bottom: 0;
+        transform: rotate(45deg);
       }
     }
   }
