@@ -19,6 +19,7 @@ import Vue from 'vue'
 import vModel from '@/mixins/vModel.vue'
 
 export default Vue.extend({
+  name: 'AtomHamburguer',
   mixins: [vModel],
   props: {
     label: {
@@ -36,12 +37,6 @@ export default Vue.extend({
 <style lang="postcss">
 .hamburger {
   @apply inline-block bg-transparent border-0 outline-none overflow-visible w-10 h-10;
-
-  /* &:hover {} */
-
-  /* &:focus {
-    @apply outline-none;
-  } */
 
   &-box {
     @apply relative inline-block w-10;
