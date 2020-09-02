@@ -66,7 +66,8 @@ export default Vue.extend({
       mask: url('/images/arrow-right.svg') no-repeat 100% 100%;
       mask-size: cover;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after,
       &::before {
         @apply transition ease-in-out duration-200;
