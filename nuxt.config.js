@@ -90,6 +90,7 @@ export default {
     // Docs: https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
   ],
+  // Docs: https://tailwindcss.nuxtjs.org/options
   tailwindcss: {
     configPath: '@/../tailwind.config.js',
   },
