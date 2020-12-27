@@ -1,5 +1,5 @@
 export default {
-  mode: 'universal',
+  target: 'static',
   srcDir: 'src/',
   /*
    ** Headers of the page
