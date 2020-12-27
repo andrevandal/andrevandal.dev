@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import vModel from '@/mixins/vModel.vue'
+import vModel from '@/mixins/vModel'
 
 export default Vue.extend({
   name: 'AtomHamburguer',
