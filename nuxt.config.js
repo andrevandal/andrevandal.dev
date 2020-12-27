@@ -89,11 +89,19 @@ export default {
     '@nuxtjs/tailwindcss',
     // Docs: https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
+    // Docs: https://github.com/juliomrqz/nuxt-netlify
+    '@aceforth/nuxt-netlify',
   ],
   // Docs: https://tailwindcss.nuxtjs.org/options
   tailwindcss: {
     configPath: '@/../tailwind.config.js',
   },
+
+  // Docs: https://marquez.co/docs/nuxt-netlify/
+  netlify: {
+    mergeSecurityHeaders: true,
+  },
+
   /*
    ** Nuxt.js modules
    */
