@@ -100,6 +100,20 @@ export default {
   // Docs: https://marquez.co/docs/nuxt-netlify/
   netlify: {
     mergeSecurityHeaders: true,
+    redirects: [
+      {
+        from: '/instagram',
+        to: 'https://linktr.ee/derevandal',
+        status: 301,
+        force: true,
+      },
+      {
+        from: '/*',
+        to: 'https://github.com/derevandal',
+        status: 302,
+        force: true,
+      },
+    ],
   },
 
   /*
