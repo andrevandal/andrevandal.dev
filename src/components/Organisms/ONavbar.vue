@@ -3,7 +3,7 @@
     <MContainer items="center" justify="between">
       <ALogo title="Navegar até a Página Inicial" />
       <AHamburguer v-model="openned" class="relative z-20" />
-      <LazyMMenu v-show="openned" v-model="openned" />
+      <LazyMMenu v-show="openned" v-model="openned" :items="menuItems" />
     </MContainer>
   </nav>
 </template>
@@ -15,6 +15,13 @@ export default Vue.extend({
   name: 'ONavbar',
   data: () => ({
     openned: false,
+    menuItems: [
+      { to: '/', title: '/início' },
+      { to: '/categorias', title: '/categorias' },
+      { to: '/uso', title: '/uso' },
+      { to: '/sobre', title: '/sobre' },
+      { to: '/contato', title: '/contato' },
+    ],
   }),
   head() {
     return {

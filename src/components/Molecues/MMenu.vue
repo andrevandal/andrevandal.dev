@@ -1,30 +1,14 @@
 <template>
   <transition name="slide-fade-right">
     <ul class="menu" :class="{ actived: value }">
-      <li class="menu-item">
-        <nuxt-link class="menu-link" to="/" @click.native="change"
-          >/início</nuxt-link
-        >
-      </li>
-      <li class="menu-item">
-        <nuxt-link class="menu-link" to="/usos" @click.native="change"
-          >/usos</nuxt-link
-        >
-      </li>
-      <li class="menu-item">
-        <nuxt-link class="menu-link" to="/sobre" @click.native="change"
-          >/sobre</nuxt-link
-        >
-      </li>
-      <li class="menu-item">
-        <nuxt-link class="menu-link" to="/blog" @click.native="change"
-          >/blog</nuxt-link
-        >
-      </li>
-      <li class="menu-item">
-        <nuxt-link class="menu-link" to="/contato" @click.native="change"
-          >/contato</nuxt-link
-        >
+      <li
+        v-for="(item, index) in items"
+        :key="`menu-item-${index}`"
+        class="menu-item"
+      >
+        <nuxt-link class="menu-link" :to="item.to" @click.native="change">
+          {{ item.title }}
+        </nuxt-link>
       </li>
     </ul>
   </transition>
@@ -34,8 +18,23 @@
 import Vue from 'vue'
 import vModel from '@/mixins/vModel.vue'
 
+interface MenuItem {
+  to: string
+  title: string
+}
+
+interface MenuItems extends Array<MenuItem> {}
+
 export default Vue.extend({
   mixins: [vModel],
+  props: {
+    items: {
+      type: Array,
+      required: true,
+      validator: (value: MenuItems) =>
+        value.filter((e) => e.to && e.title).length > 0,
+    },
+  },
 })
 </script>
 
