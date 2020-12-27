@@ -73,63 +73,10 @@ module.exports = {
         1: '0.25rem',
         2: '0.5rem',
       },
-      textStyles: (theme) => ({
-        heading: {
-          output: false,
-          fontWeight: theme('fontWeight.bold'),
-          lineHeight: theme('lineHeight.tight'),
-        },
-        h1: {
-          extends: 'heading',
-          fontSize: theme('fontSize.5xl'),
-          '@screen sm': {
-            fontSize: theme('fontSize.6xl'),
-          },
-        },
-        h2: {
-          extends: 'heading',
-          fontSize: theme('fontSize.4xl'),
-          '@screen sm': {
-            fontSize: theme('fontSize.5xl'),
-          },
-        },
-        h3: {
-          extends: 'heading',
-          fontSize: theme('fontSize.4xl'),
-        },
-        h4: {
-          extends: 'heading',
-          fontSize: theme('fontSize.3xl'),
-        },
-        h5: {
-          extends: 'heading',
-          fontSize: theme('fontSize.2xl'),
-        },
-        h6: {
-          extends: 'heading',
-          fontSize: theme('fontSize.xl'),
-        },
-        link: {
-          fontWeight: theme('fontWeight.bold'),
-          color: theme('colors.blue.400'),
-          '&:hover': {
-            color: theme('colors.blue.600'),
-            textDecoration: 'underline',
-          },
-        },
-      }),
     },
   },
   variants: {},
   plugins: [
-    require('tailwindcss-typography')({
-      // all these options default to the values specified here
-      ellipsis: true, // whether to generate ellipsis utilities
-      hyphens: true, // whether to generate hyphenation utilities
-      kerning: true, // whether to generate kerning utilities
-      textUnset: true, // whether to generate utilities to unset text properties
-      componentPrefix: '', // the prefix to use for text style classes
-    }),
     require('@tailwindcss/typography'),
     function ({ addBase }) {
       addBase({

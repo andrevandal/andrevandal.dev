@@ -12753,13 +12753,6 @@ tailwind-config-viewer@^1.4.0:
     vue "^2.6.10"
     vue-draggable-resizable "^2.2.0"
 
-tailwindcss-typography@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-typography/-/tailwindcss-typography-3.1.0.tgz#b60690d97a53b0d94eab286cd02f68d6d30e2d3d"
-  integrity sha512-uqovHMt9orPs1kl2U+bidlcO25tmUGJjjluQdI67yRnOy/IlqKe6tYcHHAsQPhehlk3r11/T3CE7Uc0PSUJcNg==
-  dependencies:
-    lodash "^4.17.15"
-
 tailwindcss@^1.9.6:
   version "1.9.6"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-1.9.6.tgz#0c5089911d24e1e98e592a31bfdb3d8f34ecf1a0"
