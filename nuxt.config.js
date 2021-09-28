@@ -109,7 +109,7 @@ export default {
       },
       {
         from: '/*',
-        to: 'https://github.com/derevandal',
+        to: 'https://github.com/andrevandal',
         status: 302,
         force: true,
       },
