@@ -55,7 +55,7 @@
     "@nuxtjs/axios": "5.12.4",
     "@nuxtjs/pwa": "3.3.3",
     "@tailwindcss/typography": "^0.3.1",
-    "nuxt": "2.14.12"
+    "nuxt": "3.4.3"
   },
   "devDependencies": {
     "@aceforth/nuxt-netlify": "^1.1.0",
