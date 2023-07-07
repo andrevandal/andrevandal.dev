@@ -86,7 +86,7 @@
     "postcss-nested": "^4.2.3",
     "prettier": "^2.2.1",
     "standard-version": "9.0.0",
-    "stylelint": "13.8.0",
+    "stylelint": "15.10.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-selector-bem-pattern": "^2.1.0",
